@@ -32,6 +32,26 @@ const config: Config = {
     },
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [nextui({
+    themes: {
+      light: {
+        // ...
+        colors: {primary: {
+          
+          foreground: "hsl(26, 100%, 55%)",
+          DEFAULT: "hsl(26, 100%, 55%)",
+        }},
+      },
+      dark: {
+        // ...
+        colors: {primary: {
+          
+          foreground: "hsl(26, 100%, 55%)",
+          DEFAULT: "hsl(26, 100%, 55%)",
+        }},
+      },
+      // ... custom themes
+    },
+  }),],
 };
 export default config;
