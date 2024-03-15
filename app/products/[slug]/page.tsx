@@ -53,7 +53,7 @@ const swipePower = (offset: number, velocity: number) => {
   return Math.abs(offset) * velocity;
 };
 
-export default function page({ params }: { params: { slug: string } }) {
+export default function Page({ params }: { params: { slug: string } }) {
   // const data = { ...data.products[0], discount: data.discount };
   const { cart, addToCart } = useContext(CartContext);
   const [data, setData] = useState<Product | undefined>();
@@ -86,7 +86,7 @@ export default function page({ params }: { params: { slug: string } }) {
     };
 
     fetchData();
-  }, []);
+  }, [params.slug]);
   const addHandler = () => {
     setQuantity((prevQuantity) => prevQuantity + 1);
   };

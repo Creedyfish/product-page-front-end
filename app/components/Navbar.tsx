@@ -202,7 +202,12 @@ function Navbar() {
               <DropdownItem key={item.id} className="">
                 <div className="flex items-center justify-center gap-2 text-sm ">
                   <div>
-                    <Image width={50} radius="md" src={`/${item.image}`} />
+                    <Image
+                      alt={`/${item.image}`}
+                      width={50}
+                      radius="md"
+                      src={`/${item.image}`}
+                    />
                   </div>
                   <div className="flex flex-col ">
                     <div className="text-neutral-dark-grayish-blue">
@@ -226,6 +231,7 @@ function Navbar() {
                       radius="none"
                       width={15}
                       src="/images/icon-delete.svg"
+                      alt="icon-delete"
                     />
                   </Button>
                 </div>
@@ -247,6 +253,7 @@ function Navbar() {
             color="primary"
             name="Jason Hughes"
             size="sm"
+            alt="image-avatar"
             src="/images/image-avatar.png"
           />
         </div>
