@@ -33,7 +33,7 @@ function Navbar() {
   const [activeItem, setActiveItem] = useState("Collections");
   const { cart, addToCart, deleteFromCart } = useContext(CartContext);
   const menuItems = ["Collections", "Men", "Women", "About", "Contact"];
-  console.log(cart);
+
   return (
     <Nav
       onMenuOpenChange={setIsMenuOpen}
